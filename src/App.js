@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="css">
       <LoginScreen
-        Username={'Username'}
+        Username={'Username_tooo'}
         header={'LOGIN'}
         Password={'Password'}
         RememberMe={'Remember Me'}
