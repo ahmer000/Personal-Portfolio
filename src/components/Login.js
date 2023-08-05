@@ -1,5 +1,5 @@
 import "./Login.css"
-function LoginScreen({Username,header,Password,RememberMe,forget,buttontitle,SignUp,userMailchanges,UserPasswordChanges}) {
+function LoginCard({Username,header,Password,RememberMe,gotoLogin,forget,buttontitle,SignUp,userMailchanges,UserPasswordChanges}) {
     return (
     <div className="container">
         <div className="cn">
@@ -31,11 +31,11 @@ function LoginScreen({Username,header,Password,RememberMe,forget,buttontitle,Sig
        
         </div>
         <div className="Account">
- <p>Don't Have An Account? <span className="sign">{SignUp}</span>  </p>
+ <p>Don't Have An Account? <span className="sign" onClick={gotoLogin}>{SignUp}</span></p>
  </div>
     </div>
 
     )
 
 }
-export default LoginScreen
+export default LoginCard;

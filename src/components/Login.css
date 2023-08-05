@@ -113,7 +113,8 @@
     justify-content:center;
   }
   .sign{
-      font: 14px;
+    cursor: pointer;
+      font: 20px;
       font-weight:bolder;
       color:rgba(220, 47, 43, 1);
      
