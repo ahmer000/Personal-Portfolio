@@ -17,13 +17,13 @@ function LoginScreen(){
          );}}
         UserPasswordChanges={(f)=>{console.log(
              f.target.value
-           );}}
+           );}}                                         
            gotoLogin={()=>{
             navigate('/signUp')
            }}
         />
         </>
-    )
+  )
 }
 
-export default LoginScreen
+export default LoginScreen                                                                                                  

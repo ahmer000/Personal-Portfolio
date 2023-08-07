@@ -1,4 +1,19 @@
-body{
-    background-color: rgba(220,47,43,0.05);
-
+.CSS{
+  width: 600px;
+  height:100px;
+cursor: pointer;
+  margin-left: 38rem;
+  margin-top: 2rem;
+}
+.css-left{
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 0px 10px 5px 10px;
+  margin-right:20px;
+}
+.css-right{
+  margin-left: 20px;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 0px 10px 5px 10px;
 }

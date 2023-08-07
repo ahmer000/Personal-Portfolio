@@ -1,18 +1,26 @@
+import React,{ useState } from 'react';
 import './App.css';
-import React from 'react';
-import Router from './Routes/Routes';
-import { BrowserRouter } from 'react-router-dom';
+// import React, { useState } from 'react';
 
+         
 function App() {
-  return (
-<React.Fragment>
-  <BrowserRouter>
-<Router/>
-  </BrowserRouter>
-</React.Fragment>
-     
+ const [isOn ,setIsOn]= useState(true);
+
+ return (
+<>
+<p>{isOn? 'on':'off'}</p>
+<img  className="img"src={isOn? require('./assets/on.jpg')
+:require('./assets/off.jpg') }
+width={500}height={400}></img> <br/>
+<button    
+onClick={() =>setIsOn(!isOn)}>
+  Click me
+</button>
+</>
+
   );
 }
+
 
 export default App;
 
