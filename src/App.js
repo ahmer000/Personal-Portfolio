@@ -1,27 +1,15 @@
-import React,{ useState } from 'react';
-import './App.css';
-// import React, { useState } from 'react';
+import React from 'react';
+import './App.css'
+import SliderData from './components/SliderData';
 
-         
+
 function App() {
- const [isOn ,setIsOn]= useState(true);
-
- return (
-<>
-<p>{isOn? 'on':'off'}</p>
-<img  className="img"src={isOn? require('./assets/on.jpg')
-:require('./assets/off.jpg') }
-width={500}height={400}></img> <br/>
-<button    
-onClick={() =>setIsOn(!isOn)}>
-  Click me
-</button>
+  return(
+  <>
+  <SliderData/>
 </>
-
-  );
+  )
 }
-
-
 export default App;
 
 
@@ -29,8 +17,9 @@ export default App;
     //     <Signup 
     //     FirstName={'First Name'}
     //     LastName={'Last Name'}
-    //     EmailID={'Email ID:'}
-    //     Gender={'Gender:'}
+    //     EmailID={'Ema
+    // il ID:'}
+a    //     Gender={'Gender:'}
     //     Male={'Male'}
     //     Female={'Female'}
     //     Country={'Country:'}
