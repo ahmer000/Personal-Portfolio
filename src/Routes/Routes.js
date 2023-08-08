@@ -1,15 +1,18 @@
 import React from 'react';
 import {Routes,Route} from 'react-router-dom';
-import LoginScreen from '../pages/LoginScreen';
-import SignupScreen from '../pages/SignupScreen';
+import {StepperScreen} from '../StepperScreen';
+
+import StepperScreen2 from '../pages/StepperScreen2';
+
 
 
 function Router(){
 return(
     <React.Fragment>
     <Routes>
-        <Route path='/' element={<LoginScreen/>}/>
-        <Route path='/signUp' element={<SignupScreen/>}/>
+        <Route path='/' element={<StepperScreen/>}/>
+        <Route path='/StepperScreen' element={<StepperScreen2/>}/>
+       
     </Routes>
     </React.Fragment>
 )
