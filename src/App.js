@@ -1,30 +1,39 @@
-import React, { useState } from 'react';
-import './App.css'
-import Step1 from './components/Step1';
-import Step2 from './components/Step3';
-import Step3 from './components/Step2';
+import { useEffect, useState } from "react";
+import React from "react";
+import "./App.css";
 
-function App() {
-  const [counter, setCounter] = useState(1)
+const App =()=>{
+const [data, setData]=useState([]);
+console.log('sssss',data);
+  useEffect(()=>{
+         fetch('https://jsonplaceholder.org/comments')
+    .then((res) => res.json())
+    .then((dar)=>{
+      setData(dar)
 
-  return (
-    <>
-      {
-        counter == 1 ?
-          <Step1 onNext={() => { setCounter(2) }} />
-          :
-          counter == 2 ?
-          <Step3 onNext1={() => { setCounter(3) }} />
-          :
-            counter == 3 ?
-            <Step2 onsubmit={() => { setCounter(1) }} />
-          :null
-          
-      }
-    </>
-  )
-}
+    })},[]);
+
+    return(
+      <>
+   <div className="Main">
+    
+      <div className="mini">
+       {
+        data.map((item)=>{
+          return (<div className="Data">
+            <p className="para">
+            ID =  {item.id}
+            </p>
+           
+          </div>)
+        })
+       }
+        </div>
+ 
+   </div>
+    
+      </>
+    )
+   }   ;
 export default App;
-
-
 

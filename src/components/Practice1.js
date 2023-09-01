@@ -1,15 +1,15 @@
-import React from "react";
+// import React from "react";
 
-function Practice({About}){
-    return(
+// function Practice({About}){
+//     return(
         
-        <div className="Image">
-            <p>{About}</p>
+//         <div className="Image">
+//             <p>{About}</p>
            
-<img className="img" src={require('../assets/Ima.jpg') }width={500}height={400}></img>
+// <img className="img" src={require('../assets/Ima.jpg') }width={500}height={400}></img>
 
-</div>
+// </div>
 
-    )
-}
-export default Practice;
+//     )
+// }
+// export default Practice;
