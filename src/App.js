@@ -1,39 +1,25 @@
-import { useEffect, useState } from "react";
+
+import 'react-multi-carousel/lib/styles.css';
+import Project from './components/Project';
 import React from "react";
 import "./App.css";
+import Hero from "./components/Hero";
+import Header from "./components/Header";
+import Skills from "./components/Skills";
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 const App =()=>{
-const [data, setData]=useState([]);
-console.log('sssss',data);
-  useEffect(()=>{
-         fetch('https://jsonplaceholder.org/comments')
-    .then((res) => res.json())
-    .then((dar)=>{
-      setData(dar)
-
-    })},[]);
-
-    return(
-      <>
-   <div className="Main">
-    
-      <div className="mini">
-       {
-        data.map((item)=>{
-          return (<div className="Data">
-            <p className="para">
-            ID =  {item.id}
-            </p>
-           
-          </div>)
-        })
-       }
-        </div>
- 
-   </div>
-    
-      </>
-    )
-   }   ;
+return(
+  <>
+  < Hero />
+  <Header />
+<Skills />
+<Project />
+<Contact />
+<Footer />
+  </>
+)
+   }   
 export default App;
 

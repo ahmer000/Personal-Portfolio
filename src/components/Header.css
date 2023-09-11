@@ -1,66 +1,174 @@
-/* 
-.header-container{
-	background-color: rgb(28, 27, 27);
-width: 100%;
-padding: 1rem;
-}
 
-.nav-bar{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-content: center;
-	align-items:center ;
-	margin: 1rem 1rem 1rem 1rem;
-}
-.navbar { 
-	width: 100%;
-	display: flex;
-	flex-direction: row;
+.banner {
+	
+	margin-top: 0;
+	padding: 10px 0 100px 0;
+	background-image: url(../assets/banner-bg.png);
+	background-position: top center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 600px;
+  }
+  .banner .tagline { 
+	margin-left: 5%;
+	font-weight: 700;
+	letter-spacing: 0.8px;
+	padding: 8px 10px;
+	background: linear-gradient(90.21deg, rgba(115, 35, 83, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	font-size: 20px;
+	margin-bottom: 16px;
+	display: inline-block;
+  }
+
+  .banner h1 {
+	margin-left: 5%;
+	font-size:35px;
+	font-weight: 700;
+	letter-spacing: 0.8px;
+	line-height: 1;
+	margin-bottom: 20px;
+
+  }
+  .banner p {
+	margin-left: 5%;
+	color: #B8B8B8;
+	font-size: 18px;
+	letter-spacing: 0.8px;
+	line-height: 1.5em;
+	width: 55%;
+  }
+  .main{
+	margin-bottom: 100px;
+  }
+  .banner button {
+	color: #fff;
+	font-weight: 700;
+	font-size: 20px;
+	margin-top: 60px;
+	letter-spacing: 0.8px;
+
 	align-items: center;
-	justify-content: space-between;
-	margin-left: auto;
-}
-ul{
-	padding: 1rem;
-	list-style: none;
-	color: white;
-}
-.nav-names{
-	color: white;
-}
+  }
+  .banner button svg {
+	font-size: 25px;
+	margin-left: 10px;
+	transition: 0.3s ease-in-out;
+	line-height: 1;
+  }
+  .banner button:hover svg {
+	margin-left: 105px;
+  }
+  .banner img {
+	
+	display: flex;
+	margin: 5% 10% 0% 70%;
+	width: 200px;
+	height:200px;
+	animation: updown 3s linear infinite;
+  }
   
-   
-
-li a{
-	color: crimson;
-	margin-left: 2rem;
-	font-size: 2rem;
-	font-weight: 600;
-	font-style: normal;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  @keyframes updown {
+	  0% {
+		  transform: translateY(-20px);
+	  }
+	  50% {
+		  transform: translateY(20px);
+	  }
+	  100% {
+		  transform: translateY(-20px);
+	  }
+  }
+  .txt-rotate > .wrap {
+	border-right: 0.08em solid #666;
+  }
+  @media only screen and (max-width: 600px) {
+	.banner img {
+	
+		display: flex;
+		margin: 5% 10% 0% 40%;
+		width: 100px;
+		height:100px;
+		animation: updown 3s linear infinite;
+	  }
+	  .banner .tagline {
+		margin-left: 27%;
+		align-items: center;
+		text-align: center;
+		font-weight: 500;
+		letter-spacing: 0.5px;
+		padding: 8px 10px;
+		background: linear-gradient(90.21deg, rgba(115, 35, 83, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		font-size: 15px;
+		margin-bottom: 16px;
+		display: inline-block;
+	  }
+	
+	  .banner h1 {
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		font-size:20px;
+		font-weight: 500;
+		letter-spacing: 0.5px;
+		line-height: 1;
+		margin-bottom: 20px;
+	
+	  }
+	  .banner p {
+		margin-left: 100px;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		color: #B8B8B8;
+		font-size: 14px;
+		letter-spacing: 0.5px;
+		line-height: 1em;
+		width: 55%;
+	  }
 }
-
-li a:hover{
-	transition: 2s;
-	color: white;
-	border-bottom-width: 3px;
-	border-bottom-style: groove;
-	border-bottom-color: wheat;
-}
-
-
-@media only screen and (max-width: 500px) {
-	li a{
-		display: none;
-		 color: crimson;
-		font-size: 0.9rem;
-		font-weight: 600;
-		font-style: normal;
-		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+@media only screen and (max-width: 500px) and (min-width: 200px)  {
+	.banner .tagline {
+		margin-top: 50px;
+		margin-left: 15%;
+		align-items: center;
+		text-align: center;
+		font-weight: 500;
+		letter-spacing: 0.5px;
+		padding: 8px 10px;
+		background: linear-gradient(90.21deg, rgba(115, 35, 83, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		font-size: 15px;
+		margin-bottom: 16px;
+		display: inline-block;
+	  }
+	
+	  .banner h1 {
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		font-size:22px;
+		font-weight: 500;
+		letter-spacing: 0.5px;
+		line-height: 1;
+		margin-bottom: 20px;
+	
+	  }
+	  .banner p {
+		margin-top: 50px;
+		
+		margin-left: 30px;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		color: #B8B8B8;
+		font-size: 14px;
+		letter-spacing: 0.5px;
+		line-height: 1em;
+		width: 80%;
+	  }
 	}
-	.brand{
-	margin-left: 2rem;
-	}
-		} */
  
